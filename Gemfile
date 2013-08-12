@@ -41,7 +41,7 @@ gem 'ruby-fogbugz', :require => 'fogbugz'
 # Github Issues
 gem 'octokit'
 # Gitlab
-gem 'gitlab', :git => 'https://github.com/NARKOZ/gitlab.git'
+gem 'gitlab', git: "git@github.com:NARKOZ/gitlab.git"
 
 # Bitbucket Issues
 gem 'bitbucket_rest_api', :require => false
@@ -99,6 +99,7 @@ end
 
 group :development do
   gem 'capistrano'
+  gem "rvm-capistrano", "~> 1.4.3"
 
   # better errors
   gem 'better_errors'    , :platform => :ruby_19
